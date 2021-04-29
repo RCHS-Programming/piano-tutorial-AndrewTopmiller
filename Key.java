@@ -16,6 +16,7 @@ public class Key extends Actor
         sound = soundFile;
         upImage = img1;
         downImage = img2;
+        setImage(upImage);
     }
 
     /**
@@ -31,7 +32,7 @@ public class Key extends Actor
     }
     if ( isDown && !Greenfoot.isKeyDown (key))
     {
-        setImage("white-key.png");
+        setImage(upImage);
         isDown = false;
     }
     }
